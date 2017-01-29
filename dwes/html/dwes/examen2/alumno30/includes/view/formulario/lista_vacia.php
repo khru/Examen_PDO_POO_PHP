@@ -1,0 +1,1 @@
+<h1 class="vacio"><span>Lista esta vacia</span></h1>

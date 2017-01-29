@@ -1,0 +1,503 @@
+/* Imdportar fuentes de google */
+@import url(https://fonts.googleapis.com/css?family=Roboto|Oswald|Montserrat|Ubuntu|Titillium+Web|Oxygen);
+/* ESTILOS GENERALES */
+*{
+	margin:auto;
+}
+html,body{
+	background-image: url('../img/swirl_pattern.png');
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+/* Estilos de la cabecera */
+header{
+	background-image: url('../img/footer_lodyas.png');
+	padding: 10px;
+}
+header h1{
+	color: white;
+	font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 8px black;
+}
+/* Estilo del pie de página */
+footer{
+	margin-top: 20px;
+	background-image: url('../img/footer_lodyas.png');
+	padding-top: 15px;
+	padding-bottom:  15px;
+	/*position: absolute;*/
+	/*position: fixed;*/
+	position: relative;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+}
+p.autor{
+	float: right;
+	color:white;
+	text-align: right;
+	margin-right: 20px;
+	text-shadow: 2px 2px 8px black;
+	font-size: 1.2em;
+}
+
+/* Estilos del cuerpo del documento */
+.wrap{
+	 min-height: calc(90.5vh - 6rem);
+}
+/* Estilos del menu */
+/* NAVEGACIÓN */
+#navigation {
+  background-color: #eee;
+}
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+#navigation li {
+  border-right: 1px solid #ddd;
+  display: block;
+  float: left;
+  margin: 0;
+}
+#navigation li:last-child {
+  border-right-width: 0;
+}
+#navigation a {
+  background-color: #eee;
+  color: #333;
+  display: block;
+  padding: .50em 1em;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+#navegation li > li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#navigation a:hover {
+  background-color: #01A9DB;
+  font-weight: bold;
+  color: black;
+  -webkit-box-shadow: 2px 2px 5px #999;
+
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* Posibles estilos necesarios en el examen */
+
+/* Formularios */
+/* ================== */
+p{
+	margin-bottom: 5px;
+}
+label{
+	/*width: 200px;*/
+	display: inline-block;
+
+}
+/* inputs generales */
+input{
+	width: 100%;
+	display:inline-block;
+	font-size: 1.5em;
+
+}
+::-webkit-input-placeholder {
+   text-align: center;
+   font-weight: bold;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+
+/* Estilo a los campos de selección */
+/* POR DEFECTO Dos select = 100% del ancho */
+select {
+    font-size: 1.2em;
+    display: inline-block;
+    /*width: 49%;*/
+    width: 100%;
+}
+/* 3 select = 100% del ancho */
+select.clase3{
+    font-size: 1.2em;
+    display: inline-block;
+    width: 32.7%;
+}
+input:hover{
+	text-shadow: 0px 0px black;
+	transition-duration: 0.1s;
+}
+/*
+ * EFECTO IMPORTANTE: todos los input requeridos empiezan con un padding de 5px y el borde rojo
+ * pero también los que tienen el focus, de modo que cuando el campo está correctamente rellenado
+ * según el formato, el borde se vuelve verde y si selecionamos otro campo, el compo correcto pierde
+ * el padding
+ */
+input:focus:invalid {
+	padding-top:5px;
+	padding-bottom: 5px;
+	transition-duration: 0.5s;
+}
+/* Borde rojo para los */
+input:invalid {
+	border: 3px solid red;
+}
+/* Cuando un input sea valido tendrá un borde verde (Más intuitivo para el usuario) */
+input:valid {
+	padding-top:5px;
+	padding-bottom: 5px;
+	border: 3px solid #088A08;
+}
+/* =================== */
+/* Estilo contenedor del formulario */
+section.formulario{
+	margin-bottom: 20px;
+	margin:auto;
+	margin-top: 20px;
+	padding: 25px;
+	background-color: #FF8300;
+	width: 50%;
+	border:#9B5000 5px solid;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px black;
+	max-width: 1200px;
+}
+.formulario h2{
+	text-align:center;
+	text-shadow:1px 1px 1px white;
+}
+section.buscador{
+	text-align: center;
+	margin-bottom: 20px;
+	margin:auto;
+	margin-top: 20px;
+	padding: 25px;
+	background-color: #FF8300;
+	width: 80%;
+	border:#9B5000 5px solid;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px black;
+	max-width: 1200px;
+}
+/* Estilos de tablas para posible consultas sobre la BD (TABLAS) */
+table {
+    border: 3px solid #ddd;
+    padding: 5px;
+    border-collapse: separate;
+    background-color: #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    margin:auto;
+
+}
+td, th{
+    padding: 5px;
+}
+td  a {
+	text-align:center;
+	display:block;
+	color:black;
+	border:2px black solid;
+	border-radius:3px;
+	text-decoration:none;
+	background-color:#E3F2FD;
+	/* Tiempo que dura la transición */
+	transition:all 0.5s ease;
+
+}
+td a:hover{
+	border:2px #2196F3 solid;
+	background:#2196F3;
+	color:white;
+}
+td a:before{
+	content:'>';
+	position: absolute;
+	width: 0px;
+	left:-10px;
+	z-index:-5;
+ 	transition: all 0.6s ease;
+}
+td a:hover:before{
+	z-index:5;
+	position: relative;
+	left:0px;
+}
+
+th{
+	background-color:#06799F;
+	color:white;
+}
+tr:nth-child(odd){
+	 background-color: #FF8300;
+}
+
+tr:nth-child(even){
+     background-color: #e6ebf4;
+}
+th{
+    border-bottom: 5px solid #97b2de;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+/* Resultados vacios */
+h1.vacio{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: black 5px dashed;
+
+}
+.vacio span{
+    background-color: white;
+}
+
+/* Estilos de errores */
+/* ESTILOS DE ERRORES */
+ul.listaerrores{
+	list-style:none;
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+
+}
+.listaerrores li{
+    margin-bottom: 3px;
+    text-align:center;
+}
+.error{
+    background-color: #fcc;
+    color:red;
+    display: inline;
+}
+.server-error {
+	position: absolute;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	z-index: +2;
+}
+.server-error span{
+	background-color: white;
+}
+.server-error hgroup{
+	margin-top: 15%;
+	text-align: center;
+	font-size: 2vw;
+}
+.server-error h1{
+	font-size: 5em;
+}
+.server-error h2{
+	font-size: 3em;
+}
+/* Botones de los formularios  -- DESPUÉS DE LOS ERRORES PARA QUE EL ENVIAR NO TENGA EL BORDE ROJO --*/
+.enviar{
+	background-color:#06799F;
+	border:#034A61 5px solid;
+	color: white;
+	box-shadow: 2px 2px 8px black;
+}
+.enviar:hover{
+	background-color:#06799F;
+	border:white 5px solid;
+	border-radius: 5px;
+	text-shadow: 2px 2px black;
+	transition-duration: 0.5s;
+	font-weight: bold;
+}
+.acciones a {
+	background-color:#0D98CD;
+	border:#035E80 5px solid;
+	color: white;
+	box-shadow: 2px 2px 8px black;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width:50%;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.acciones a:hover{
+	background-color:#06799F;
+	border:white 5px solid;
+	border-radius: 5px;
+	text-shadow: 2px 2px black;
+	transition-duration: 0.5s;
+	font-weight: bold;
+}
+.borrar{
+	background-color: #F80012;
+	border: #CE000F 5px solid;
+	color: white;
+	box-shadow: 2px 2px 8px black;
+}
+.borrar:hover{
+	background-color: #F80012;
+	border:white 5px solid;
+	border-radius: 5px;
+	text-shadow: 2px 2px black;
+	transition-duration: 0.5s;
+	font-weight: bold;
+}
+/* Estilo posible textarea */
+textarea{
+	width: 100%
+}
+fieldset {
+	border:black 3px solid;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+/* Estilos para corregir los input radio*/
+fieldset.radio{
+	width: auto;
+	display: inline;
+}
+.radio{
+	width: auto;
+	display: inline;
+}
+fieldset.check{
+	width: auto;
+	display: inline;
+}
+.check{
+	width: auto;
+	display: inline;
+}
+/*.pie{
+	/position: absolute;
+	bottom: 0;
+}*/
+footer a{
+	display: inline;
+	padding: 5px;
+	margin-left: 15px;
+	color: white;
+	text-decoration: none;
+	background-color: #FF8300;
+	border:#9B5000 5px solid;
+	overflow: hidden;
+}
+footer a:hover{
+	background-color: #06799F;
+	border:#034A61 5px solid;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px black;
+	transition-duration: 0.5s;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+section.registro a{
+	text-decoration: none;
+	color: white;
+	text-decoration: none;
+	background-color: #FF8300;
+	border:#9B5000 5px solid;
+	padding: 5px;
+}
+section.registro a:hover{
+	background-color: #06799F;
+	border:#034A61 5px solid;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px black;
+	transition-duration: 0.5s;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+section.registro p{
+	text-align: center;
+	margin-top: 15px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+.registro p:last-child{
+	margin-bottom: 0px;
+}
+h1.titulo{
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 8px black;
+	margin-bottom: 10px;
+}
+.usuario-creado hgroup{
+	margin-top: 5%;
+	text-align: center;
+	font-size: 2vw;
+}
+.usuario-creado h1{
+	font-size: 5em;
+}
+.usuario-creado h2{
+	font-size: 3em;
+}
+section.usuario-creado:before{
+	content: url(../img/checked_user.png);
+	text-align: center;
+    width: 100%;
+	display: block;
+}
+/* Estilos media query, de consulta sobre la pantalla */
+@media screen and (max-width: 1000px){
+	section select{
+	    font-size: 1.2em;
+	    display: inline-block;
+	    width: 100%;
+	    margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 900px){
+	section.formulario{
+		margin:auto;
+		margin-top: 20px;
+		padding: 15px;
+		background-color: #FF8300;
+		width: 80%;
+		border:#9B5000 5px solid;
+		border-radius: 5px;
+		box-shadow: 0px 0px 8px black;
+	}
+	.accion > a{
+		padding-left: 20%;
+		padding-right: 20%;
+		display:block;
+		width:90%;
+	}
+}
